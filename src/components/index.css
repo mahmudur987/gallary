@@ -1,0 +1,21 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.draggable-container {
+  animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+/* Add this class to the individual draggable components */
+.draggable-item {
+  animation: shake 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.draggable-item:hover {
+  transform: scale(1.1);
+}
